@@ -39,9 +39,5 @@ namespace ExpensesApp.iOS.CustomRenderers
             CGAffineTransform transform = CGAffineTransform.MakeScale(x, y);
             Transform = transform;
         }
-
-        public CustomProgressBarRenderer()
-        {
-        }
     }
 }
