@@ -9,10 +9,6 @@ namespace ExpensesApp.iOS.Effects
 {
     public class SelectedEffect : PlatformEffect
     {
-        public SelectedEffect()
-        {
-        }
-
         protected override void OnAttached()
         {
 
