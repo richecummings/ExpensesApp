@@ -15,13 +15,16 @@
                      Command="{Binding Source={StaticResource vm}, Path=SaveExpenseCommand}" />
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <StackLayout Margin="16">
-            <Entry Placeholder="Expense name" />
+        <StackLayout Margin="16" BindingContext="{Binding Source={StaticResource vm}}">
+            <Entry Placeholder="Expense name" 
+                   Text="{Binding Path=ExpenseName, Mode=TwoWay}"/>
             <Entry Placeholder="Amount"
+                   Text="{Binding Path=ExpenseAmount, Mode=TwoWay}"
                    Keyboard="Numeric" />
-            <Entry Placeholder="Short description" />
-            <DatePicker />
-            <Picker />
+            <Entry Placeholder="Short description" 
+                   Text="{Binding Path=ExpenseDescription, Mode=TwoWay}"/>
+            <DatePicker Date="{Binding ExpenseDate, Mode=TwoWay}"/>
+            <Picker SelectedItem="{Binding ExpenseCategory, Mode=TwoWay}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
