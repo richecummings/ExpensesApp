@@ -48,8 +48,8 @@ namespace ExpensesApp.ViewModels
 
         public void ShareReport()
         {
-            IShare share;
-            share.Show("", "", "");
+            IShare shareDependency = DependencyService.Get<IShare>();
+            shareDependency.Show("", "", "");
         }
     }
 }
