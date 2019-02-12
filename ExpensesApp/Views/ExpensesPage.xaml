@@ -19,6 +19,7 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <TextCell Text="{Binding Name}"
+                              StyleId="detail-disclosure-button"
                               Detail="{Binding Category}"/>
                 </DataTemplate>
             </ListView.ItemTemplate>
