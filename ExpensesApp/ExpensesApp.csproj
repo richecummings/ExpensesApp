@@ -22,6 +22,7 @@
     <Folder Include="Interfaces\" />
     <Folder Include="Behaviors\" />
     <Folder Include="Effects\" />
+    <Folder Include="Stylesheets\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Views\ExpenseDetailsPage.xml" />
