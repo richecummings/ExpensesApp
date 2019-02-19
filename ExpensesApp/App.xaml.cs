@@ -1,4 +1,5 @@
 using System;
+using ExpensesApp.Resources;
 using ExpensesApp.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
